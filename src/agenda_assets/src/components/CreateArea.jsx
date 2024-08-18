@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import AddIcon from "@material-ui/icons/Add";
+import AddIcon from "@material-ui/icons/AddCircleOutline";
 import Fab from "@material-ui/core/Fab";
 import Zoom from "@material-ui/core/Zoom";
 
@@ -57,7 +57,7 @@ function CreateArea(props) {
         />
         <Zoom in={isExpanded}>
           <Fab onClick={submitNote}>
-            <AddIcon />
+            <AddIcon className="addIcon" style={{fontSize:'45px'}} />
           </Fab>
         </Zoom>
       </form>
